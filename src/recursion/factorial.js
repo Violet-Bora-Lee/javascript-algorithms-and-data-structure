@@ -4,6 +4,16 @@
 // e.g., factorial four ( 4! ) is equal to 24, because 4 * 3 * 2 * 1 equals 24.
 // factorial zero (0!) is always 1.
 
+// my solution
+function factorial(num){
+  if(num === 0){ // num <=1 로 바꾸는게 좋을것같다!
+      return 1;
+  }
+  
+  return num * factorial(num - 1);
+ 
+}
+
 function factorial(num) {
   if (num <= 1) return 1;
 

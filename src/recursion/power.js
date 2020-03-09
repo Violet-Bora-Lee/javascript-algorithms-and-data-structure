@@ -4,6 +4,16 @@
 // This function should mimic the functionality of Math.pow().
 // Do not worry about negative bases and exponents.
 
+function power(base, exponent){
+  if (base === 1 || exponent === 0) {
+      return 1;
+  }
+  
+  return base * power(base, exponent - 1);
+  
+}
+
+
 function power(num, pow) {
   if (pow === 0) return 1;
 

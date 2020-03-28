@@ -20,12 +20,12 @@ console.log(fibBF(10)); // 55
 // Space Complexity O(n)
 
 // Top-down approach - Memoization
-function fibTD(num, cache = {}) {
+function fibTD(num, cache = {}) { // or set default param as cache = [undefined, 1, 1]
   if (typeof cache[num] !== 'undefined') return cache[num];
   if (num < 2) return num;
 
   cache[num] = fibTD(num - 1, cache) + fibTD(num - 2, cache);
-
+  // console.log(memo)
   return cache[num];
 }
 
@@ -58,6 +58,16 @@ console.log(fibTDFunc(1000)); // 4.346655768693743e+208
 
 // Bottom-up approach - Tabulation
 // Space Complexity O(1)
+function fib_table(n) {
+  if (n <= 2) return 1;
+  let fibNums = [0, 1, 1];
+  for (let i = 3; i <= n; i++) {
+      fibNums[i] = fibNums[n - 1] + fibNums[n - 2];
+  }
+  return fibNums[n];
+}
+
+// Nkaty's solution
 function fibBU(num) {
   if (num < 2) return num;
 

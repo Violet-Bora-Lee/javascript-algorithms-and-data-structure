@@ -5,17 +5,22 @@
 // which starts with 1 and 1, and where every number thereafter
 // is equal to the sum of the previous two numbers.
 
-// my solution
+// my solution 1
 function fib(num){
   // add whatever parameters you deem necessary - good luck!
   if (num === 1 || num === 2) {
       return 1;
   }
-  
+
   return fib(num - 1) + fib(num - 2);
 }
 
+// my solution 2
+function fib(num) {
+  return num <= 1 ? num : fib(num - 1) + fib(num - 2);
+}
 
+// colt's solution
 function fib(num) {
   if (num < 2) return num;
 

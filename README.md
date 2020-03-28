@@ -4,6 +4,8 @@ Link to course: https://www.udemy.com/js-algorithms-and-data-structures-mastercl
 
 This repo contains solutions to Colt Steele's JavaScript Algorithms and Data Structures Masterclass course on Udemy.
 
+The [original repo](https://github.com/NKaty/Algorithms-and-Data-Structures) is made by [NKaty](https://github.com/NKaty). This [revised repo](https://github.com/Violet-Bora-Lee/javascript-algorithms-and-data-structure) is made by [Violet-Bora-Lee](https://github.com/Violet-Bora-Lee).
+
 #### Coding Exercises of the course:
 - [Problem solving patterns](src/problem-solving-patterns)
     - [Frequency Counter Pattern](src/problem-solving-patterns/frequency-counter)
